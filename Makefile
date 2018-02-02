@@ -12,7 +12,6 @@ install-docker:;: '$(os)'
 	@apt-get update
 	@apt-get install docker-ce -y
 	@apt-cache madison docker-ce
-	@usermod -aG docker otka
 	@docker run hello-world
 	@echo "============Docker has been Installed==============="
 	
